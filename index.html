@@ -190,32 +190,6 @@ body {
 .progress-card:nth-child(3) .fill { background: var(--blue); width: 30%; }
 .progress-meta { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-3); }
 
-/* ===== 素材库 ===== */
-.assets { background: #fff; }
-.assets-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
-}
-.asset-item {
-  position: relative; border-radius: 10px; overflow: hidden;
-  aspect-ratio: 1; background: var(--bg); cursor: pointer;
-  transition: all 0.25s;
-}
-.asset-item img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
-  transition: transform 0.4s;
-}
-.asset-item:hover { transform: scale(1.03); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
-.asset-item:hover img { transform: scale(1.08); }
-.asset-item .overlay {
-  position: absolute; inset:0; background: linear-gradient(transparent 50%, rgba(0,0,0,0.6));
-  opacity: 0; transition: opacity 0.25s; display: flex; align-items: flex-end; padding: 14px;
-}
-.asset-item:hover .overlay { opacity: 1; }
-.asset-item .overlay span { color: #fff; font-size: 12px; font-weight: 500; }
-.assets-more {
-  text-align: center; margin-top: 40px;
-}
-
 /* ===== 时间线 ===== */
 .timeline { background: var(--bg); }
 .timeline-list { position: relative; max-width: 680px; margin: 0 auto; }
@@ -299,7 +273,6 @@ body {
   .section { padding: 64px 20px; }
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
   .progress-grid { grid-template-columns: 1fr; }
-  .assets-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-stats { gap: 28px; }
   .footer { padding: 32px 20px; }
   .footer-inner { flex-direction: column; }
@@ -318,7 +291,6 @@ body {
   <ul class="nav-links">
     <li><a href="#about">关于项目</a></li>
     <li><a href="#progress">项目进度</a></li>
-    <li><a href="#assets">素材库</a></li>
     <li><a href="#timeline">游戏历史</a></li>
   </ul>
   <a href="#join" class="nav-cta">参与项目</a>
@@ -332,24 +304,24 @@ body {
     <h1>让<span class="accent">乐高无限</span><br>重新<span class="yellow">活过来</span></h1>
     <p class="hero-desc">
       《乐高®无限》已于2022年8月31日停止运营。这是一个由玩家自发组织的复活项目，
-      我们解包游戏素材、重建官网、记录历史，让这款经典沙盒游戏的记忆不被遗忘。
+      我们收集资料、重建官网、记录历史，让这款经典沙盒游戏的记忆不被遗忘。
     </p>
     <div class="hero-buttons">
       <a href="#about" class="btn btn-primary">了解项目 →</a>
-      <a href="#assets" class="btn btn-outline">浏览素材库</a>
+      <a href="#timeline" class="btn btn-outline">游戏历史</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <div class="num red">27,280</div>
-        <div class="label">已解包游戏素材</div>
+        <div class="num red">2019</div>
+        <div class="label">游戏正式上线</div>
       </div>
       <div class="hero-stat">
-        <div class="num blue">925</div>
-        <div class="label">MB 素材总量</div>
-      </div>
-      <div class="hero-stat">
-        <div class="num yellow">4</div>
+        <div class="num blue">4</div>
         <div class="label">年运营历史</div>
+      </div>
+      <div class="hero-stat">
+        <div class="num yellow">∞</div>
+        <div class="label">玩家回忆</div>
       </div>
     </div>
   </div>
@@ -366,18 +338,18 @@ body {
     <div class="about-grid">
       <div class="about-text">
         <p><strong>乐高无限</strong>是腾讯NEXT Studio研发、乐高集团正版授权的3D沙盒游戏，2019年8月8日上线，2022年8月31日停服，运营不到4年。</p>
-        <p>停服后，官方网站关闭、论坛归档、下载通道消失，大量玩家创作的地图和素材随之流失。这个项目的目标是<strong>记录和保存</strong>，而不是取代。</p>
-        <p>我们从游戏安装包中解包出全部AssetBundle素材，重建官方网站，整理游戏历史时间线，为后来的玩家留下一份可查阅的档案。</p>
-        <p>如果你也热爱这款游戏，欢迎加入我们——无论是提供素材、修复文档，还是单纯聊聊当年的回忆。</p>
+        <p>停服后，官方网站关闭、论坛归档、下载通道消失，大量玩家创作的地图和作品随之流失。这个项目的目标是<strong>记录和保存</strong>，而不是取代。</p>
+        <p>我们收集整理游戏相关的公开资料，重建官方网站，整理游戏历史时间线，为后来的玩家留下一份可查阅的档案。</p>
+        <p>如果你也热爱这款游戏，欢迎加入我们——无论是提供历史资料、修复文档，还是单纯聊聊当年的回忆。</p>
       </div>
       <div class="about-cards">
         <div class="about-card">
-          <h4>📦 素材解包与归档</h4>
-          <p>从游戏APK/IPA中解包全部AssetBundle资源，分类整理，建立可搜索的素材库。</p>
+          <h4>📦 游戏资料归档</h4>
+          <p>收集整理游戏相关的公开资料、版本信息、玩家作品，建立可查阅的档案库。</p>
         </div>
         <div class="about-card">
           <h4>🌐 官网重建</h4>
-          <p>基于公开资料和游戏素材，重建乐高无限官方网站，作为游戏的数字纪念碑。</p>
+          <p>基于公开资料，重建乐高无限官方网站，作为游戏的数字纪念碑。</p>
         </div>
         <div class="about-card">
           <h4>📚 历史记录</h4>
@@ -399,15 +371,15 @@ body {
     <div class="progress-grid">
       <div class="progress-card">
         <div class="icon">📦</div>
-        <h4>素材解包</h4>
-        <p>完成游戏AssetBundle全部资源的解包与分类，共27280张图片素材。</p>
+        <h4>资料收集</h4>
+        <p>收集游戏相关的公开资料、版本信息、历史公告，进行分类整理。</p>
         <div class="progress-bar"><div class="fill"></div></div>
-        <div class="progress-meta"><span>已完成</span><span>100%</span></div>
+        <div class="progress-meta"><span>进行中</span><span>70%</span></div>
       </div>
       <div class="progress-card">
         <div class="icon">🌐</div>
         <h4>官网重建</h4>
-        <p>使用游戏真实素材重建官方网站，已部署到GitHub Pages，持续优化设计。</p>
+        <p>基于公开资料重建官方网站，已部署到GitHub Pages，持续优化设计。</p>
         <div class="progress-bar"><div class="fill"></div></div>
         <div class="progress-meta"><span>进行中</span><span>60%</span></div>
       </div>
@@ -418,53 +390,6 @@ body {
         <div class="progress-bar"><div class="fill"></div></div>
         <div class="progress-meta"><span>规划中</span><span>30%</span></div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- 素材库 -->
-<section class="assets" id="assets">
-  <div class="section-inner">
-    <div class="section-head">
-      <div class="eyebrow">Assets</div>
-      <h2>游戏素材库</h2>
-      <p>从游戏中解包的真实素材，包括Logo、场景背景、UI图标等。</p>
-    </div>
-    <div class="assets-grid">
-      <div class="asset-item">
-        <img src="assets/images/hero-bg.jpg" alt="生存模式背景">
-        <div class="overlay"><span>生存模式 · 宣传图</span></div>
-      </div>
-      <div class="asset-item">
-        <img src="assets/images/bg-2.jpg" alt="游戏场景">
-        <div class="overlay"><span>游戏场景 · 背景图</span></div>
-      </div>
-      <div class="asset-item">
-        <img src="assets/images/bg-3.jpg" alt="冒险探索">
-        <div class="overlay"><span>冒险探索 · 背景图</span></div>
-      </div>
-      <div class="asset-item">
-        <img src="assets/images/bg-4.jpg" alt="建筑建造">
-        <div class="overlay"><span>建筑建造 · 背景图</span></div>
-      </div>
-      <div class="asset-item">
-        <img src="assets/images/bg-5.jpg" alt="乐高世界">
-        <div class="overlay"><span>乐高世界 · 背景图</span></div>
-      </div>
-      <div class="asset-item">
-        <img src="assets/images/logo.png" alt="游戏Logo" style="object-fit:contain; padding:20%; background:#fff;">
-        <div class="overlay"><span>官方Logo · 横向版</span></div>
-      </div>
-      <div class="asset-item">
-        <img src="assets/images/logo-square.png" alt="方形Logo" style="object-fit:contain; padding:20%; background:#fff;">
-        <div class="overlay"><span>官方Logo · 方形版</span></div>
-      </div>
-      <div class="asset-item" style="display:flex; align-items:center; justify-content:center; background:var(--bg);">
-        <span style="font-size:14px; color:var(--text-3);">+27,272 更多</span>
-      </div>
-    </div>
-    <div class="assets-more">
-      <a href="#" class="btn btn-outline">查看完整素材库 →</a>
     </div>
   </div>
 </section>
@@ -512,7 +437,7 @@ body {
   <div class="join-inner">
     <h2>加入我们</h2>
     <p>
-      这个项目完全开源、非盈利。如果你有游戏素材、历史资料、或者只是想聊聊当年的回忆，
+      这个项目完全开源、非盈利。如果你有历史资料、游戏回忆、或者只是想聊聊当年的故事，
       都欢迎通过以下方式找到我们。
     </p>
     <div class="join-buttons">
@@ -530,7 +455,7 @@ body {
         <span class="brick"></span>
         乐高无限 · 复活计划
       </div>
-      <p>本网站为玩家自发项目，与腾讯游戏、乐高集团无关。仅用于游戏历史记录与素材存档，不提供游戏下载或运营服务。</p>
+      <p>本网站为玩家自发项目，与腾讯游戏、乐高集团无关。仅用于游戏历史记录与资料存档，不提供游戏下载或运营服务。</p>
     </div>
     <div class="footer-links">
       <div class="footer-col">
@@ -538,7 +463,6 @@ body {
         <ul>
           <li><a href="#about">关于项目</a></li>
           <li><a href="#progress">项目进度</a></li>
-          <li><a href="#assets">素材库</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -553,7 +477,7 @@ body {
         <h5>联系</h5>
         <ul>
           <li><a href="https://github.com/oooq18/lego-infinity-website-backup" target="_blank">GitHub</a></li>
-          <li><a href="#">提交素材</a></li>
+          <li><a href="#">提交资料</a></li>
           <li><a href="#">问题反馈</a></li>
         </ul>
       </div>
