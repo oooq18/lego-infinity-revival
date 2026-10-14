@@ -174,19 +174,45 @@
             margin-bottom: 20px;
         }
         .about-visual {
-            height: 300px;
-            background: linear-gradient(135deg, #1a3a6a, #2a5a9a);
+            height: 350px;
             border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
             position: relative;
             overflow: hidden;
+            background: #0d1f3c;
         }
-        .about-visual::after {
-            content: "🧱";
-            font-size: 120px;
+        .about-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* 官方素材展示 */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .gallery-item {
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-caption {
+            padding: 12px;
+            font-size: 13px;
+            color: #99a;
+            text-align: center;
+            background: #0d1f3c;
         }
 
         /* 玩法特色 */
@@ -345,7 +371,30 @@
             <p>游戏于2018年9月19日开启预约，2019年8月8日正式上线，同步登陆iOS、Android及PC平台。</p>
         </div>
         <div class="about-visual">
-            <!-- 乐高积木视觉占位 -->
+            <img src="assets/images/announcement-yellow-brick.jpg" alt="乐高无限官宣海报 - 黄色积木">
+        </div>
+    </div>
+</section>
+
+<!-- 官方素材 -->
+<section class="section about" id="gallery">
+    <h2 class="section-title">官方素材</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="assets/images/announcement-yellow-brick.jpg" alt="2018.9.19 官宣海报 - 黄色积木">
+            <div class="gallery-caption">2018.9.19 官宣 · 黄色积木</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/announcement-knight.jpg" alt="2018.9.19 官宣海报 - 骑士">
+            <div class="gallery-caption">2018.9.19 官宣 · 骑士</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/announcement-sword.jpg" alt="2018.9.19 官宣海报 - 圣剑">
+            <div class="gallery-caption">2018.9.19 官宣 · 圣剑</div>
+        </div>
+        <div class="gallery-item">
+            <img src="assets/images/creation-contest-2019.jpg" alt="2019乐高无限青年创造大赛">
+            <div class="gallery-caption">2019 创造大赛 · 北京站</div>
         </div>
     </div>
 </section>

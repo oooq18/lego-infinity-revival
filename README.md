@@ -40,10 +40,12 @@
 ```
 ├── index.html                          # 官网首页（静态重建版）
 ├── README.md                           # 项目说明与游戏档案
-└── reference/                          # 第三方参考资料存档
-    ├── tencent-iwan-game-page.html     # 腾讯爱玩游戏库官方页面
-    ├── gamersky-mobile-page.html      # 游民星空手游频道页面
-    └── 17173-review-page.html          # 17173新游评测页面
+└── assets/
+    └── images/                         # 官方素材图
+        ├── announcement-yellow-brick.jpg   # 2018.9.19 官宣海报 · 黄色积木
+        ├── announcement-knight.jpg         # 2018.9.19 官宣海报 · 骑士
+        ├── announcement-sword.jpg          # 2018.9.19 官宣海报 · 圣剑
+        └── creation-contest-2019.jpg       # 2019 乐高无限青年创造大赛
 ```
 
 ## 游戏特色
